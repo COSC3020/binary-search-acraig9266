@@ -3,7 +3,7 @@ function binarySearch(list, element) {
     let last = (list.length - 1);
     let center = (list.length / 2);
 
-    while (first <= last) {
+    while (first < last) {
         center = (first + last) / 2;
         if (element == list[center]) { return center }
         else if (element >= list[center]) { first = center + 1}
