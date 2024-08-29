@@ -5,7 +5,8 @@ function binarySearch(list, element) {
 
     while (first <= last) {
         center = Math.floor((first + last) / 2);
-        if (element == list[center]) { return center }
+        if (element == list[first]) { return first }
+        else if (element == list[center]) { return center }
         else if (element >= list[center]) { first = center + 1}
         else if (element <= list[center]) { last = center - 1}
     }
